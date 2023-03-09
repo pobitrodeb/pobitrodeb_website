@@ -1,14 +1,139 @@
-@extends('./master/header.blade.php')
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Olux – Creative Personal CV/Resume Portfolio HTML Template</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}website/assets/css/style.css">
+
+    <!-- icomoon font -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}website/assets/css/icomoon.css">
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}website/assets/css/responsive.css">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="{{ asset('/') }}website/assets/icon/Favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('/') }}website/assets/icon/Favicon.png">
+
+    <link rel="stylesheet" href="{{ asset('/') }}website/assets/css/swiper-bundle.min.css" />
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="header-fixed preloading">
+
+    <div id="preload" class="preload-container">
+        <div class="preload-logo"></div>
+    </div>
+
+    <div id="wrapper" class="animsition">
+        <div id="page" class="clearfix">
+            <!-- Header Wrap -->
+            <div id="site-header-wrap">
+                <!-- Top Bar -->
+                <div id="top-bar">
+                    <div id="top-bar-inner">
+                        <div class="top-bar-inner-wrap">
+                            <div class="top-bar-content">
+                                <div class="inner text-white link-style-2">
+                                    <span class="phone content section-16px-regular"><a href="tel:012345678">(+706)
+                                            898-0752</a></span>
+                                    <span class="mail content section-16px-regular"><a
+                                            href="mailto:olux.design@gmail.com">olux.design@gmail.com</a></span>
+                                </div>
+                            </div>
+                            <!-- /.top-bar-content -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /#top-bar -->
+
+                <!-- Header -->
+                <header id="site-header">
+                    <div id="site-header-inner">
+                        <div class="wrap-inner clearfix">
+                            <div id="site-logo" class="clearfix">
+                                <div id="site-log-inner">
+                                    <a href="index.html" rel="home" class="main-logo">
+                                        <img src="{{ asset('/') }}website/assets/images/logo/logo-header.png" alt="images">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /#site-logo -->
+
+                            <div class="mobile-button">
+                                <span></span>
+                            </div>
+                            <!-- /.mobile-button -->
+                            <nav id="main-nav" class="main-nav">
+                                <ul id="menu-primary-menu" class="menu">
+                                    <li class="menu-item current-menu-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="about.html">About </a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="services.html">Services</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="services.html">Services</a></li>
+                                            <li class="menu-item"><a href="service-single.html">Service Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="portfolio.html">Portfolio</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+                                            <li class="menu-item"><a href="portfolio-single.html">Portfolio Single</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="team.html">Our Team</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="blog.html">Blog</a>
+                                        <ul class="sub-menu right-sub-menu">
+                                            <li class="menu-item"><a href="blog.html">Blog</a></li>
+                                            <li class="menu-item"><a href="blog-single.html">Blog Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- /#main-nav -->
+                            <div class="header-menu">
+                                <a href="#" class="header-menu-trigger icon-Group-1199"></a>
+                            </div>
+                        </div>
                         <div class="side-menu__block">
                             <div class="side-menu__block-overlay custom-cursor__overlay"></div>
                             <div class="side-menu__block-inner">
                                 <div class="side-menu__top justify-content-end">
                                     <a href="#" class="side-menu__toggler side-menu__close-btn"><img
-                                            src="assets/icon/close-1-1.png" alt="images"></a>
+                                            src="{{ asset('/') }}website/assets/icon/close-1-1.png" alt="images"></a>
                                 </div>
                                 <div class="side-menu__top-introduce">
                                     <a href="index.html" rel="home" class="main-logo">
-                                        <img src="assets/images/logo/logo-header.png" alt="images">
+                                        <img src="{{ asset('/') }}website/assets/images/logo/logo-header.png" alt="images">
                                     </a>
                                     <p>Etiam efficitur, metus in cursus imperdiet, neque nisl porta erat, nec volutpat
                                         felis lacus a tellus. Nunc tristique nulla nisi, a viverra dui auctor vitae.
@@ -22,31 +147,31 @@
                                     </div>
                                     <div class="side-menu__lastest">
                                         <div class="side-menu__lastest-item">
-                                            <img src="assets/images/image-box/side-menu-latest-1.jpg" alt="images">
+                                            <img src="{{ asset('/') }}website/assets/images/image-box/side-menu-latest-1.jpg" alt="images">
                                             <div class="side-menu__lastest-layer">
                                                 <a href="blog-single.html" class="side-menu__lastest-icon"></a>
                                             </div>
                                         </div>
                                         <div class="side-menu__lastest-item">
-                                            <img src="assets/images/image-box/side-menu-latest-2.jpg" alt="images">
+                                            <img src="{{ asset('/') }}website/assets/images/image-box/side-menu-latest-2.jpg" alt="images">
                                             <div class="side-menu__lastest-layer">
                                                 <a href="blog-single.html" class="side-menu__lastest-icon"></a>
                                             </div>
                                         </div>
                                         <div class="side-menu__lastest-item">
-                                            <img src="assets/images/image-box/side-menu-latest-3.jpg" alt="images">
+                                            <img src="{{ asset('/') }}website/assets/images/image-box/side-menu-latest-3.jpg" alt="images">
                                             <div class="side-menu__lastest-layer">
                                                 <a href="blog-single.html" class="side-menu__lastest-icon"></a>
                                             </div>
                                         </div>
                                         <div class="side-menu__lastest-item">
-                                            <img src="assets/images/image-box/side-menu-latest-4.jpg" alt="images">
+                                            <img src="{{ asset('/') }}website/assets/images/image-box/side-menu-latest-4.jpg" alt="images">
                                             <div class="side-menu__lastest-layer">
                                                 <a href="blog-single.html" class="side-menu__lastest-icon"></a>
                                             </div>
                                         </div>
                                         <div class="side-menu__lastest-item">
-                                            <img src="assets/images/image-box/side-menu-latest-5.jpg" alt="images">
+                                            <img src="{{ asset('/') }}website/assets/images/image-box/side-menu-latest-5.jpg" alt="images">
                                             <div class="side-menu__lastest-layer">
                                                 <a href="blog-single.html" class="side-menu__lastest-icon"></a>
                                             </div>
@@ -87,7 +212,7 @@
                         </div>
                     </div>
                     <div class="mark-slide">
-                        <img src="assets/images/mark-page/mark-icon-slide.png" alt="images">
+                        <img src="{{ asset('/') }}website/assets/images/mark-page/mark-icon-slide.png" alt="images">
                     </div>
                     <div class="swiper-container mainslider">
                         <div class="swiper-wrapper">
@@ -108,7 +233,7 @@
                                     </div>
                                 </div>
                                 <div class="content-slider-right">
-                                    <img src="assets/images/image-slider/img-slider.jpg" alt="images">
+                                    <img src="{{ asset('/') }}website/assets/images/image-slider/img-slider.jpg" alt="images">
                                 </div>
                             </div>
                             <div class="swiper-slide slider-st-1">
@@ -128,7 +253,7 @@
                                     </div>
                                 </div>
                                 <div class="content-slider-right">
-                                    <img src="assets/images/image-slider/img-slider.jpg" alt="images">
+                                    <img src="{{ asset('/') }}website/assets/images/image-slider/img-slider.jpg" alt="images">
                                 </div>
                             </div>
                             <div class="swiper-slide slider-st-1">
@@ -148,7 +273,7 @@
                                     </div>
                                 </div>
                                 <div class="content-slider-right">
-                                    <img src="assets/images/image-slider/img-slider.jpg" alt="images">
+                                    <img src="{{ asset('/') }}website/assets/images/image-slider/img-slider.jpg" alt="images">
                                 </div>
                             </div>
                         </div>
@@ -171,13 +296,13 @@
                             </div>
                             <div class="group-post-about wow fadeInLeft">
                                 <div class="post-big">
-                                    <img src="assets/images/image-box/about-post-1.jpg" alt="images">
+                                    <img src="{{ asset('/') }}website/assets/images/image-box/about-post-1.jpg" alt="images">
                                 </div>
                                 <div class="post-sm">
-                                    <img src="assets/images/image-box/about-post-2.jpg" alt="images">
+                                    <img src="{{ asset('/') }}website/assets/images/image-box/about-post-2.jpg" alt="images">
                                 </div>
                                 <div class="post-sm-2">
-                                    <img src="assets/images/image-box/elipse.png" alt="images">
+                                    <img src="{{ asset('/') }}website/assets/images/image-box/elipse.png" alt="images">
                                 </div>
                                 <div class="about-years">
                                     <span>08</span>
@@ -399,7 +524,7 @@
                             <div class="swiper-container swiper-coverflow style-coverflow ">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide style-coverflow">
-                                        <img src="assets/images/image-slider/working-project-sl-1.png" alt="images">
+                                        <img src="{{ asset('/') }}website/assets/images/image-slider/working-project-sl-1.png" alt="images">
                                         <div class="coverflow-overlay">
                                             <div class="coverflow-overlay-content text-white link-style-5">
                                                 <a href="service-single.html"
@@ -411,7 +536,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide style-coverflow">
-                                        <img src="assets/images/image-slider/working-project-sl-2.png" alt="images">
+                                        <img src="{{ asset('/') }}website/assets/images/image-slider/working-project-sl-2.png" alt="images">
                                         <div class="coverflow-overlay">
                                             <div class="coverflow-overlay-content text-white link-style-5">
                                                 <a href="service-single.html"
@@ -423,7 +548,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide style-coverflow">
-                                        <img src="assets/images/image-slider/working-project-sl-3.png" alt="images">
+                                        <img src="{{ asset('/') }}website/assets/images/image-slider/working-project-sl-3.png" alt="images">
                                         <div class="coverflow-overlay">
                                             <div class="coverflow-overlay-content text-white link-style-5">
                                                 <a href="service-single.html"
@@ -435,7 +560,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide style-coverflow">
-                                        <img src="assets/images/image-slider/working-project-sl-4.png" alt="images">
+                                        <img src="{{ asset('/') }}website/assets/images/image-slider/working-project-sl-4.png" alt="images">
                                         <div class="coverflow-overlay">
                                             <div class="coverflow-overlay-content text-white link-style-5">
                                                 <a href="service-single.html"
@@ -447,7 +572,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide style-coverflow">
-                                        <img src="assets/images/image-slider/working-project-sl-5.png" alt="images">
+                                        <img src="{{ asset('/') }}website/assets/images/image-slider/working-project-sl-5.png" alt="images">
                                         <div class="coverflow-overlay">
                                             <div class="coverflow-overlay-content text-white link-style-5">
                                                 <a href="service-single.html"
@@ -534,8 +659,8 @@
                                     Vestibulum accumsan elementum leo, et viverra justo ultricies ac. Vivamus quis dolor
                                     ac orci tempus ornare. In volutpat vitae ligula vitae lacinia.</p>
                                 <div class="brand-client wow fadeInLeft">
-                                    <span><img src="assets/images/brand/brand-client-1.png" alt="images"></span>
-                                    <span><img src="assets/images/brand/brand-client-2.png" alt="images"></span>
+                                    <span><img src="{{ asset('/') }}website/assets/images/brand/brand-client-1.png" alt="images"></span>
+                                    <span><img src="{{ asset('/') }}website/assets/images/brand/brand-client-2.png" alt="images"></span>
                                 </div>
                                 <button class="clone-btn-prev"></button>
                                 <button class="clone-btn-next"></button>
@@ -547,7 +672,7 @@
                                     <div class="swiper-slide">
                                         <div class="client-slider-box">
                                             <div class="client-user">
-                                                <img src="assets/images/image-slider/client-slider-box.jpg"
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/client-slider-box.jpg"
                                                     alt="images">
                                             </div>
                                             <div class="client-content">
@@ -563,7 +688,7 @@
                                     <div class="swiper-slide">
                                         <div class="client-slider-box">
                                             <div class="client-user">
-                                                <img src="assets/images/image-slider/client-slider-box.jpg"
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/client-slider-box.jpg"
                                                     alt="images">
                                             </div>
                                             <div class="client-content">
@@ -579,7 +704,7 @@
                                     <div class="swiper-slide">
                                         <div class="client-slider-box">
                                             <div class="client-user">
-                                                <img src="assets/images/image-slider/client-slider-box.jpg"
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/client-slider-box.jpg"
                                                     alt="images">
                                             </div>
                                             <div class="client-content">
@@ -595,7 +720,7 @@
                                     <div class="swiper-slide">
                                         <div class="client-slider-box">
                                             <div class="client-user">
-                                                <img src="assets/images/image-slider/client-slider-box.jpg"
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/client-slider-box.jpg"
                                                     alt="images">
                                             </div>
                                             <div class="client-content">
@@ -611,7 +736,7 @@
                                     <div class="swiper-slide">
                                         <div class="client-slider-box">
                                             <div class="client-user">
-                                                <img src="assets/images/image-slider/client-slider-box.jpg"
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/client-slider-box.jpg"
                                                     alt="images">
                                             </div>
                                             <div class="client-content">
@@ -652,7 +777,7 @@
                                     <div class="swiper-slide">
                                         <div class="team-box">
                                             <div class="team-post">
-                                                <img src="assets/images/image-slider/team-slide-1.jpg" alt="images">
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/team-slide-1.jpg" alt="images">
                                                 <div class="layer-images"></div>
                                             </div>
                                             <div class="widget-team-social">
@@ -673,7 +798,7 @@
                                     <div class="swiper-slide">
                                         <div class="team-box">
                                             <div class="team-post">
-                                                <img src="assets/images/image-slider/team-slide-2.jpg" alt="images">
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/team-slide-2.jpg" alt="images">
                                                 <div class="layer-images"></div>
                                             </div>
                                             <div class="widget-team-social">
@@ -694,7 +819,7 @@
                                     <div class="swiper-slide">
                                         <div class="team-box">
                                             <div class="team-post">
-                                                <img src="assets/images/image-slider/team-slide-3.jpg" alt="images">
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/team-slide-3.jpg" alt="images">
                                                 <div class="layer-images"></div>
                                             </div>
                                             <div class="widget-team-social">
@@ -715,7 +840,7 @@
                                     <div class="swiper-slide">
                                         <div class="team-box">
                                             <div class="team-post">
-                                                <img src="assets/images/image-slider/team-slide-4.jpg" alt="images">
+                                                <img src="{{ asset('/') }}website/assets/images/image-slider/team-slide-4.jpg" alt="images">
                                                 <div class="layer-images"></div>
                                             </div>
                                             <div class="widget-team-social">
@@ -752,7 +877,7 @@
                             <div class="latest-new-box grow-up-hover wow fadeInUp" data-wow-delay="0ms"
                                 data-wow-duration="1500ms">
                                 <div class="latest-post">
-                                    <img src="assets/images/image-box/latest-image-box-1.jpg" class="grow-up-hover"
+                                    <img src="{{ asset('/') }}website/assets/images/image-box/latest-image-box-1.jpg" class="grow-up-hover"
                                         alt="images">
                                 </div>
                                 <div class="latest-content">
@@ -774,7 +899,7 @@
                             <div class="latest-new-box grow-up-hover wow fadeInUp" data-wow-delay="300ms"
                                 data-wow-duration="1500ms">
                                 <div class="latest-post">
-                                    <img src="assets/images/image-box/latest-image-box-2.jpg" class="grow-up-hover"
+                                    <img src="{{ asset('/') }}website/assets/images/image-box/latest-image-box-2.jpg" class="grow-up-hover"
                                         alt="images">
                                 </div>
                                 <div class="latest-content">
@@ -796,7 +921,7 @@
                             <div class="latest-new-box grow-up-hover wow fadeInUp" data-wow-delay="600ms"
                                 data-wow-duration="1500ms">
                                 <div class="latest-post">
-                                    <img src="assets/images/image-box/latest-image-box-3.jpg" class="grow-up-hover"
+                                    <img src="{{ asset('/') }}website/assets/images/image-box/latest-image-box-3.jpg" class="grow-up-hover"
                                         alt="images">
                                 </div>
                                 <div class="latest-content">
@@ -838,7 +963,7 @@
                         <div class="col-md-5">
                             <div class="logo-footer margin-bottom-20">
                                 <a href="index.html" rel="home" class="main-logo">
-                                    <img src="assets/images/logo/logo-footer.png" alt="images">
+                                    <img src="{{ asset('/') }}website/assets/images/logo/logo-footer.png" alt="images">
                                 </a>
                             </div>
                             <p class="text-white line-height-32 margin-bottom-20">We’re a group of creative nerds who
@@ -925,17 +1050,17 @@
     <a id="scroll-top"></a>
 
     <!-- Javascript -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/tether.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/countto.js"></script>
-    <script src="assets/js/jquery.cookie.js"></script>
-    <script src="assets/js/shortcodes.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/jquery.min.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/plugins.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/tether.min.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/bootstrap.min.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/countto.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/jquery.cookie.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/shortcodes.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/wow.min.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/swiper-bundle.min.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/swiper.js"></script>
+    <script src="{{ asset('/') }}website/assets/js/main.js"></script>
 
 </body>
 
