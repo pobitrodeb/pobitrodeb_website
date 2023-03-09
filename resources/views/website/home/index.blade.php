@@ -47,35 +47,44 @@
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="about.html">About </a>
+                                    <a href="{{ route('about') }}">About </a>
                                 </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="services.html">Services</a>
+                                <li class="menu-item">
+                                    <a href="{{ route('services') }}">Services </a>
+                                </li>
+                                {{-- <li class="menu-item menu-item-has-children">
+                                    <a href="{{ route('services') }}">Services</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item"><a href="services.html">Services</a></li>
                                         <li class="menu-item"><a href="service-single.html">Service Single</a></li>
                                     </ul>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
+                                </li> --}}
+                                {{-- <li class="menu-item menu-item-has-children">
                                     <a href="portfolio.html">Portfolio</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
                                         <li class="menu-item"><a href="portfolio-single.html">Portfolio Single</a>
                                         </li>
                                     </ul>
+                                </li> --}}
+                                <li class="menu-item">
+                                    <a href="{{ route('portfolio') }}">Portfolio</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="team.html">Our Team</a>
+                                    <a href="{{ route('team') }}">Our Team</a>
                                 </li>
-                                <li class="menu-item menu-item-has-children">
+                                <li class="menu-item">
+                                    <a href="{{ route('blog') }}">Blog</a>
+                                </li>
+                                {{-- <li class="menu-item menu-item-has-children">
                                     <a href="blog.html">Blog</a>
                                     <ul class="sub-menu right-sub-menu">
                                         <li class="menu-item"><a href="blog.html">Blog</a></li>
                                         <li class="menu-item"><a href="blog-single.html">Blog Single</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="menu-item">
-                                    <a href="contact.html">Contact</a>
+                                    <a href="{{ route('contact') }}">Contact</a>
                                 </li>
                             </ul>
                         </nav>
