@@ -45,6 +45,8 @@
         <div class="preload-logo"></div>
     </div>
 
+    
+
     <div id="wrapper" class="animsition">
         <div id="page" class="clearfix">
             <!-- Header Wrap -->
@@ -738,6 +740,8 @@
     <a id="scroll-top"></a>
 
     <!-- Javascript -->
+    <!-- SmoothScroll -->
+	<script src="{{ asset('/') }}website/js/smoothscroll.js"></script>
     <script src="{{ asset('/') }}website/assets/js/jquery.min.js"></script>
     <script src="{{ asset('/') }}website/assets/js/plugins.js"></script>
     <script src="{{ asset('/') }}website/assets/js/tether.min.js"></script>

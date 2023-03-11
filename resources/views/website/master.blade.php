@@ -33,7 +33,7 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body class="header-fixed preloading">
@@ -45,6 +45,9 @@
  @yield('body')
     <!-- /#wrapper -->
 
+    <a href="https://wa.link/j7062r" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <a id="scroll-top"></a>
 
     <!-- Javascript -->

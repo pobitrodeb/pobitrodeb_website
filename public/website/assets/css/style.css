@@ -49,7 +49,7 @@
   * flat brand
   * flat about client
   * flat latest style 2
-  * flat list services 
+  * flat list services
   * flat about work
   * flat contact me
   * flat services details
@@ -2311,7 +2311,7 @@ a:focus {
 }
 
 
-/* flat title page 
+/* flat title page
 --------------------------------------------------------------*/
 
 .flat-title-page {
@@ -2332,7 +2332,7 @@ a:focus {
     color      : #ffffff;
 }
 
-/* flat blog 
+/* flat blog
 --------------------------------------------------------------*/
 .flat-blog {
     padding: 130px 0;
@@ -3734,7 +3734,7 @@ a:focus {
     border-radius: 10px;
 }
 
-/* flat list services 
+/* flat list services
 -------------------------------------------------------------- */
 .flat-list-services {
     padding         : 126px 0 104px 0;
@@ -4923,4 +4923,22 @@ a:focus {
 
 .close:hover {
     color: var(--primary-color);
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
 }
